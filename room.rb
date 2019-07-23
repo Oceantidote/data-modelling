@@ -15,19 +15,9 @@ class Room
   end
 
   def add_patient(patient)
-    # fail Exception, "Room is full" if full?
-    # @patients << patient
-    # patient.room = self
-
-
-
-    begin
-      @patients << patient
-      patient.room = self
-    rescue CapacityReachedError
-      "This room is already full"
-    end
-
+    fail Exception, "Room is full" if full?
+    @patients << patient
+    patient.room = self
   end
 
 

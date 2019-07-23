@@ -1,7 +1,4 @@
 class Room
-
-  # def CapacityReachedError < Exception
-  # end
   attr_accessor :id
 
   def initialize(attributes = {})
